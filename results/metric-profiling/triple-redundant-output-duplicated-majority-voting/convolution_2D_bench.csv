@@ -1,0 +1,18 @@
+==28935== NVPROF is profiling process 28935, command: ./convolution_2D_cuda_float_256 -s 256 -k 3
+==28935== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28935== Profiling application: ./convolution_2D_cuda_float_256 -s 256 -k 3
+==28935== Profiling result:
+==28935== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"achieved_occupancy","Achieved Occupancy",0.882795,0.887187,0.884980
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",94.289742%,94.786390%,94.606466%
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"gld_efficiency","Global Memory Load Efficiency",21.014640%,21.015223%,21.014912%
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"l2_utilization","L2 Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"inst_fp_32","FP Instructions(Single)",589824,589824,589824
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"inst_fp_64","FP Instructions(Double)",0,0,0
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"inst_integer","Integer Instructions",10281226,10281226,10281226
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Xavier (0)","covolution_kernel(float const *, float*, float const *, int, int, int, int)",3,"ipc","Executed IPC",1.203804,1.211139,1.208039

@@ -1,0 +1,18 @@
+==28967== NVPROF is profiling process 28967, command: ./wavelet_transform_cuda_float_256 -s 1024
+==28967== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28967== Profiling application: ./wavelet_transform_cuda_float_256 -s 1024
+==28967== Profiling result:
+==28967== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"achieved_occupancy","Achieved Occupancy",0.124201,0.124264,0.124223
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"sm_efficiency","Multiprocessor Activity",15.464926%,15.793887%,15.607793%
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"gld_efficiency","Global Memory Load Efficiency",42.431562%,42.431562%,42.431562%
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"l2_utilization","L2 Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"inst_fp_32","FP Instructions(Single)",8192,8192,8192
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"inst_fp_64","FP Instructions(Double)",0,0,0
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"inst_integer","Integer Instructions",35342,35342,35342
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Xavier (0)","wavelet_transform(float const *, float*, int, float const *, float const *)",3,"ipc","Executed IPC",0.475400,0.502549,0.487504

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo /usr/local/cuda/bin/nvprof --csv --log-file convolution_2D_bench.csv --metrics achieved_occupancy,sm_efficiency,warp_execution_efficiency,shared_efficiency,gld_efficiency,l2_utilization,inst_fp_16,inst_fp_32,inst_fp_64,inst_integer,inst_inter_thread_communication,ipc ./convolution_2D_cuda_float_256 -s 256 -k 3
+sudo /usr/local/cuda/bin/nvprof --csv --log-file max_pooling_bench.csv --metrics achieved_occupancy,sm_efficiency,warp_execution_efficiency,shared_efficiency,gld_efficiency,l2_utilization,inst_fp_16,inst_fp_32,inst_fp_64,inst_integer,inst_inter_thread_communication,ipc ./max_pooling_cuda_float_256 -s 1024 -l 1
+sudo /usr/local/cuda/bin/nvprof --csv --log-file wavelet_transform.csv --metrics achieved_occupancy,sm_efficiency,warp_execution_efficiency,shared_efficiency,gld_efficiency,l2_utilization,inst_fp_16,inst_fp_32,inst_fp_64,inst_integer,inst_inter_thread_communication,ipc ./wavelet_transform_cuda_float_256 -s 1024
+sudo /usr/local/cuda/bin/nvprof --csv --log-file relu_bench.csv --metrics achieved_occupancy,sm_efficiency,warp_execution_efficiency,shared_efficiency,gld_efficiency,l2_utilization,inst_fp_16,inst_fp_32,inst_fp_64,inst_integer,inst_inter_thread_communication,ipc ./relu_cuda_float_256 -s 1024
+sudo /usr/local/cuda/bin/nvprof --csv --log-file matrix_multiplication_bench.csv --metrics achieved_occupancy,sm_efficiency,warp_execution_efficiency,shared_efficiency,gld_efficiency,l2_utilization,inst_fp_16,inst_fp_32,inst_fp_64,inst_integer,inst_inter_thread_communication,ipc ./matrix_multiplication_cuda_float_256 -s 256

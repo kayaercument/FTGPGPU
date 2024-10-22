@@ -1,0 +1,6 @@
+App	IGID	Injection Model	Masked: Error was never read	Masked: Write before read	Masked: other reasons	DUE: Timeout	DUE: Non Zero Exit Status	Pot DUE: Masked but Kernel Error	Pot DUE: SDC but Kernel Error	Pot DUE: Different Error Message	Pot DUE: Error Message in Standard Output	Pot DUE: Stderr is different	Pot DUE:Stderr is different, but dmesg recorded	Pot DUE: Standard output is different, but dmesg recorded	Pot DUE: Output file is different, but dmesg recorded	Pot DUE: App specific check failed, but dmesg recorded	Pot DUE: Xid 43 recorded in dmesg	SDC: Standard output is different	SDC: Output file is different	SDC: App specific check failed	Uncategorized
+softmax_bench	gp	FLIP_SINGLE_BIT	0	0	59	0	0	0	20	0	0	0	0	0	0	0	0	19	0	0
+cifar_10	gp	FLIP_SINGLE_BIT	0	0	60	0	0	0	16	0	0	0	0	0	0	0	0	24	0	0
+correlation_2D	gp	FLIP_SINGLE_BIT	0	0	73	0	0	0	22	0	0	0	0	0	0	0	0	0	0	0
+LRN_bench	gp	FLIP_SINGLE_BIT	0	0	85	0	0	0	5	0	0	0	0	0	0	0	0	8	0	0
+relu_bench	gp	FLIP_SINGLE_BIT	0	0	48	0	0	0	10	0	0	0	0	0	0	0	0	42	0	0

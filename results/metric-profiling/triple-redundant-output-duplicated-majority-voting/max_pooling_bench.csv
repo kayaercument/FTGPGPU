@@ -1,0 +1,18 @@
+==28947== NVPROF is profiling process 28947, command: ./max_pooling_cuda_float_256 -s 1024 -l 1
+==28947== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28947== Profiling application: ./max_pooling_cuda_float_256 -s 1024 -l 1
+==28947== Profiling result:
+==28947== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"achieved_occupancy","Achieved Occupancy",0.914922,0.915801,0.915502
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"sm_efficiency","Multiprocessor Activity",98.837839%,98.962570%,98.912013%
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"gld_efficiency","Global Memory Load Efficiency",25.000548%,25.000620%,25.000580%
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"l2_utilization","L2 Cache Utilization","Low (2)","Low (2)","Low (2)"
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"inst_fp_32","FP Instructions(Single)",1048576,1048576,1048576
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"inst_fp_64","FP Instructions(Double)",0,0,0
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"inst_integer","Integer Instructions",31457280,31457280,31457280
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Xavier (0)","max_pooling_kernel(float const *, float*, int, unsigned int, unsigned int)",3,"ipc","Executed IPC",0.881051,0.882646,0.882015

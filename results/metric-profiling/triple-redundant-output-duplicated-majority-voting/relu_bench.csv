@@ -1,0 +1,18 @@
+==28978== NVPROF is profiling process 28978, command: ./relu_cuda_float_256 -s 1024
+==28978== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28978== Profiling application: ./relu_cuda_float_256 -s 1024
+==28978== Profiling result:
+==28978== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"achieved_occupancy","Achieved Occupancy",0.844833,0.848244,0.846602
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"sm_efficiency","Multiprocessor Activity",98.841026%,98.859176%,98.848845%
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"gld_efficiency","Global Memory Load Efficiency",25.002432%,25.002957%,25.002702%
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"l2_utilization","L2 Cache Utilization","Low (3)","Low (3)","Low (3)"
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"inst_fp_16","HP Instructions(Half)",0,0,0
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"inst_fp_32","FP Instructions(Single)",1048576,1048576,1048576
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"inst_fp_64","FP Instructions(Double)",0,0,0
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"inst_integer","Integer Instructions",7340032,7340032,7340032
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Xavier (0)","relu_kernel(float const *, float*, int)",3,"ipc","Executed IPC",0.343091,0.346833,0.345014
